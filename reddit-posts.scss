@@ -1,0 +1,284 @@
+.post-title {
+    display: flex;
+    margin-top: -5px;
+    margin-left: -4px;
+}
+
+.post-title > h1 {
+    order: 2;
+    margin-bottom: 0;
+    display: block !important;
+}
+
+.post-title > button {
+    order: 1;
+}
+
+.post-title span {
+    font-size: 16px !important;
+    position: relative;
+    // left: -4px;
+    // top: -4px;
+}
+
+.post-container .row .col.flex-grow-1 .post-title, .post-container .row .col.flex-grow-1 p.small.m-0 {
+    display: inline-block;
+}
+
+.post-container .row .col.flex-grow-1 p.small.m-0 {
+    font-size: 10px;
+    margin-left: 6px !important;
+}
+
+.post-container .row .col.flex-grow-1 p.small.m-0 a {
+    color: #8CB3D9 !important;
+    user-select: text;
+}
+
+.post-container .row .col.flex-grow-1 p.small.m-0 a:hover {
+    text-decoration: underline;
+}
+
+.post-container .row .col.flex-grow-1 p.small.m-0::before {
+    content: '(';
+    color: #888 !important;
+}
+
+.post-container .row .col.flex-grow-1 p.small.m-0::after {
+    content: ')';
+    color: #888 !important;
+}
+
+
+.post-title a span.d-inline {
+    color: white !important;
+    text-decoration-color: white !important;
+}
+.post-title a:visited:not(:hover) span {
+    color: #DEDEDE !important;
+}
+
+
+.post-title a:visited span {
+    color: #A6A6A6 !important;
+}
+
+.post-title button {
+    position: absolute;
+    z-index: 2;
+    transform: translate(-8px, 2px);
+}
+
+.post-title button svg {
+    border: -2px;
+    width: 2em;
+    height: 2em;
+    background-color: #CCCCC9;
+    color: #FDFDFD;
+    border-radius: 3px;
+}
+
+.post-title button svg:hover {
+    background-color: #466599;
+}
+
+.thumbnail {
+    width: 70px;
+    height: 70px;
+    border-radius: 0 !important;
+}
+
+/* the container of the "submitted by" row */
+.post-title:not(:has(> button)) ~ div.small.mb-1.mb-md-0 {
+    margin-left: -24px;
+}
+div.small.mb-1.mb-md-0 {
+    margin-left: 8px;
+}
+
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted {
+    margin-left: 28px;
+    margin-top: -10px;
+}
+
+
+.post-title:not(:has(> button)) ~ div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted {
+    margin-left: -4px;
+}
+
+div.small.mb-1.mb-md-0 {
+    display: flex;
+    margin-top: 0px;
+    color: transparent;
+}
+
+.person-listing picture {
+    display: none;
+}
+
+.person-listing {
+    margin-left: 9px;
+    color: #6A98AF !important;
+    margin-right: -14px;
+}
+
+.person-listing span {
+    position: relative;
+    z-index: -1;
+    right: 16px;
+}
+
+.person-listing span::before {
+    content: '■';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 21px;
+    color: #262626;
+    position: absolute;
+    top: -3px;
+    left: -2px;
+    bottom: 0;
+}
+
+.person-listing span::after {
+    content: ' to';
+    color: #828282;
+}
+
+
+
+
+.moment-time {
+    order: 0;
+}
+
+.person-listing {
+    order: 1;
+}
+
+.community-link {
+    order: 2;
+}
+
+
+
+
+.community-link, .person-listing {
+    color: #6A98AF !important;
+    font-size: 10px !important;
+}
+
+.community-link:hover, .person-listing:hover {
+    text-decoration: underline;
+}
+
+.moment-time::before {
+    content: 'submitted ';
+    user-select: text !important;
+}
+
+.moment-time {
+    color: #828282;
+    cursor: text;
+    user-select: text;
+    font-size: 10px !important;
+}
+.moment-time::after {
+    content: ' by';
+}
+
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted a, div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted button {
+    color: #828282 !important;
+    font-weight: 700 !important;
+    font-size: 10px !important;
+}
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted button {
+    margin-left: 0;
+}
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted a:hover {
+    text-decoration: underline;
+}
+
+a.btn.btn-link.btn-sm.text-muted.ps-0 svg {
+    display: none;
+}
+
+a.btn.btn-link.btn-sm.text-muted.ps-0::after {
+    content: ' comments';
+}
+
+
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted > button.btn.btn-sm.btn-link.btn-animate.text-muted.py-0 svg {
+    display: none;
+}
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted > button.btn.btn-sm.btn-link.btn-animate.text-muted.py-0 {
+    color: #828282 !important;
+    font-weight: 700 !important;
+    font-size: 10px !important;
+}
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted > button.btn.btn-sm.btn-link.btn-animate.text-muted.py-0::after {
+    content: 'save';
+}
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted > button.btn.btn-sm.btn-link.btn-animate.text-muted.py-0:hover {
+    text-decoration: underline;
+}
+
+.btn-animate:active {
+    -webkit-transform: none !important;
+}
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted > a.btn.btn-sm.btn-link.btn-animate.text-muted.py-0::before {
+    content: 'crosspost'
+}
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted > a.btn.btn-sm.btn-link.btn-animate.text-muted.py-0 svg {
+    display: none;
+}
+
+
+/* Convert dropdown into not a dropdown */
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted > div.dropdown {
+    display: flex;
+    margin-top: -14px;
+    margin-left: -5px;
+}
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted > div.dropdown button {
+    display: none;
+    text-align: left !important;
+    text-transform: lowercase;
+    padding: 0 0 0 15px !important;
+}
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted > div.dropdown button:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted > div.dropdown button:focus {
+    background-color: transparent;
+}
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted > div.dropdown ul {
+    display: flex;
+    background-color: transparent;
+    border-width: 0;
+    padding: 0 !important;
+}
+
+div.d-flex.align-items-center.justify-content-start.flex-wrap.text-muted > div.dropdown svg {
+    display: none;
+}
+
+/* Upvote icons */
+button.btn-animate.btn.btn-link.p-0.text-info svg {
+    display: none;
+}

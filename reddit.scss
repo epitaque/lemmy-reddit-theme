@@ -1,0 +1,8 @@
+@import "variables.reddit";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$font-family-sans-serif: "Verdana", "Arial", "Helvetica", sans-serif;
+$red-link-color: #8CB3D9;
+
+@import "reddit-top";
+@import "reddit-posts";

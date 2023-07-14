@@ -1,0 +1,91 @@
+#navTitle {
+    color: black;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-size: 26px;
+    padding-bottom: 0;
+    line-height: 30px;
+}
+
+.navbar {
+    background-color: #696969;
+    border-bottom: 1px solid #5f99cf;
+    align-items: end;
+}
+
+#navbarLinks {
+    display: none;
+}
+
+#navbarDropdown {
+    justify-content: flex-end;
+}
+
+.container-lg {
+    max-width: unset !important;
+}
+
+/* This is fucked */
+#dropdownUser {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    padding-right: 140px;
+    background-color: #333;
+    border-bottom-left-radius: 7px;
+}
+
+#dropdownUser * {
+    font-size: 10px;
+}
+
+#dropdownUser > button {
+    cursor: default;
+    border: none;
+}
+
+#dropdownUser > button::after {
+    display: none;
+}
+
+#dropdownUser .dropdown-menu {
+    position: absolute;
+    display: flex;
+    transform: translate(76px, -2px);
+    background-color: transparent;
+    border: none;
+    top:0;
+    margin-top: 0;
+}
+
+#dropdownUser > ul button, #dropdownUser > ul a {
+    color: $red-link-color;
+    border: 0;
+}
+#dropdownUser > ul li a, #dropdownUser > ul li button {
+    padding: 0 !important;
+    border: 0 !important;
+    margin-right: 2px;
+    border-left: 5px;
+    text-transform: lowercase;
+}
+
+#dropdownUser > ul button:hover, #dropdownUser > ul a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#dropdownUser > ul button.active, #dropdownUser > ul a.active {
+    background-color: transparent;
+    color: orangered;
+}
+
+#dropdownUser > ul button svg, #dropdownUser > ul a svg {
+    display: none;
+}
+
+#dropdownUser > ul a::after {
+    content: " |";
+    color: #808080;
+    cursor: default;
+}
